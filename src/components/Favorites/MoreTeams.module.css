@@ -1,0 +1,128 @@
+.modalBody{
+    position: fixed;
+    display: flex;
+    border-radius: 8px 8px 0px 0px;
+    min-height: 538px;
+    max-width: 375px;
+    width: 100vw;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    flex-direction: column;
+    overflow: scroll;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    overflow-x: hidden;
+}
+.cardBodyHeader{
+    height: 62px;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    place-items: center;
+    display: flex;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+}
+
+.cardBodyHeaderTextHolder{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonBodyHeaderHolder{
+    width:100px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardBodyHeaderTextHolder p{
+    font-weight: bold;
+    
+}
+
+.buttonBodyHeaderHolder button{
+    margin: 0;
+    background-color: transparent;
+    border:none;
+}
+
+.buttonBodyHeaderHolder button:hover{
+    cursor: pointer;
+}
+
+.allTeamsContent{
+    display:flex;
+    flex-direction: column;
+    padding: 5px 0px 5px 0px;
+}
+
+
+.individualTeam{
+    align-items: center;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(221, 221, 221);;
+}
+
+.teamImage{
+    width:50px;
+    justify-content: center;
+}
+
+.teamImage img{
+    width: 90%;
+}
+
+.teamInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-top: -5px;
+}
+
+.teamName p{
+    font-weight: bold;
+    margin: 0;
+}
+
+.followButton{
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.followButton button{
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.search{ 
+    justify-content: center;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding-left: 36px;
+    padding-right: 36px;
+    
+}
+
+.search input{
+    border-radius: 10px;
+    height: 40px;
+    font-size: 16px;
+    width: 100%;
+}

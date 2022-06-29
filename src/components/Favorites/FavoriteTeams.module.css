@@ -1,0 +1,57 @@
+.teamImagesContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.teamImages{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.teamImages img{
+    width: 75%;
+    cursor: pointer;
+}
+
+.buttonContainer{
+    max-width: 96px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonContainer span{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.buttonContainerButton{
+    cursor: pointer;
+    margin: 0px auto 1rem;
+    background: rgb(243, 243, 243) none repeat scroll 0% 0%;
+    border-radius: 24px;
+    border: 0px none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 1px 0px;
+    color: rgb(0, 0, 0);
+    height: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 48px;
+    padding: 0px;
+    text-align: center;
+    width: 48px;
+    -moz-box-align: center;
+    align-items: center;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+.buttonContainer img{
+    width: 60%;
+}

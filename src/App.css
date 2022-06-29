@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+
+.adContainer{
+  display: block;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(5, 20, 48);
+  overflow: hidden;
+}
+.container{
+  background-color: transparent;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leftColumn{
+  flex-basis: 5%;
+  max-width: 5%;
+  padding-top: 1rem; 
+  height: 100%;
+  position: sticky;
+  top: 0;
+  border: 0px none;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0rem 1rem 2rem 2rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* 
+  border: 0px none;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+  margin: 0px 1rem 1rem;
+  align-self: flex-start;
+*/
+
+.rightColumns{
+  border: 0px none;
+  flex-basis: 95%;
+  max-width: 95%;
+  display: flex;
+
+}
+
+.rightColumnOne{
+  padding: 1rem;
+  flex-basis: 66.6667%;
+  max-width: 66.6667%;
+  overflow: hidden;
+}
+
+.rightColumnTwo{
+  padding: 1rem;
+  flex-basis: 33.3333%;
+  max-width: 33.3333%;
+  /*position: sticky; this will keep the Latest news content from scrolling but will affect the backdrop*/ 
+  top: 0rem;
+  position: sticky;
+  z-index: -5;
+  overflow: hidden;
+}
+
+.latestNewsContainer{
+  margin-top: 15px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  row-gap: 15px;
+}
+
+.latestNewsContainer h2{
+  font-size: 20px;
+  margin-top: 0px;
+  padding-top: 12px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.appFooter{
+  width:98.5%;
+  height:150px;
+  padding:10px;
+  background-color: rgb(51, 51, 51);
   color: white;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  overflow: hidden;
+}
+.appFooter a{
+  text-decoration: underline;
+  color:white
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 991px) {
+  .leftColumn {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .rightColumnOne{
+    flex:1;
+    width: 100%;
+  }
+
+  .adContainer{
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .leftColumn {
+    display: none;
+  }
+  .rightColumns{
+    flex-direction: column;
+  }
+  .rightColumnOne{
+    flex:1;
+    width: 100%;
+    max-width: 95%;
+    padding: 5px;
+  }
+  .rightColumnTwo{
+    display: none;
+    padding: 0%;
   }
 }

@@ -1,0 +1,39 @@
+.body{
+    background-color: #041e42;
+    flex-wrap: nowrap;
+    width:100%;
+    height: 56px;
+    display: flex;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: rgb(0, 0, 0) 1px 0px 5px;
+    font-style: normal;
+    font-variant: normal;
+    cursor: pointer;
+}
+
+.leftNavbar{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.leftNavbar svg{
+    width: 70%;
+}
+
+.centerNavbar{
+    display: flex;
+    justify-content: flex-start;
+    flex:3;
+}
+
+.rightNavbar{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+    flex:1;
+}

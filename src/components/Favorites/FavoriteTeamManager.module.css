@@ -1,0 +1,168 @@
+.modalBody{
+    position: fixed;
+    display: flex;
+    border-radius: 8px 8px 0px 0px;
+    min-height: 538px;
+    max-width: 375px;
+    width: 100vw;
+    height: calc(100% - 100px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    flex-direction: column;
+    overflow: scroll;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    overflow-x: hidden;
+}
+
+.cardBody p{
+    font-size: 16px;
+}
+
+.cardBodyHeader{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    display: flex;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cardBodyHeader p{
+    padding-left: 45px;
+    font-weight: bold;
+    margin: 0;
+
+}
+.cardBodyHeader button{
+    border-radius: 0px 8px 0px 0px;
+    background-color: transparent;
+    border: none;
+}
+.cardBodyHeader img{
+    width: 100%;
+    padding-top: 4px;
+}
+
+.cardBodyHeader img:hover{
+    cursor: pointer;
+}
+.cardBodyListFooter{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 8px;
+    height: 70px;
+    border-top: 1px solid rgb(221, 221, 221);
+    z-index: 10;
+}
+
+.cardBodyListFooter button{
+    border:none;
+    background-color: transparent;
+    color: rgb(5, 122, 255); 
+    border-radius: 8px; 
+    height: 100%; 
+    transition: none 0s ease 0s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cardBodyListFooter button:hover{
+    cursor: pointer;
+}
+
+.titleCardBodyCenter{
+    padding-left: 5px;
+    height: 15px;
+}
+
+.cardBodyCenter{
+    display:flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding: 5px 0px 5px 0px;
+    margin-top:-5px;
+    margin-bottom: -5px;
+    scrollbar-width: none;  
+}
+
+.individualTeam{
+    align-items: center;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(221, 221, 221);;
+}
+
+.cardBodyButton{
+    width:50px;
+    height: 100%;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 10px;
+
+}
+
+.cardBodyButton button{
+    background: rgba(209, 0, 38);
+    border-radius: 11px;
+    height: 22px;
+    margin-right: 11px;
+    padding: 0px;
+    position: relative;
+    width: 22px;
+    cursor: pointer;
+    border: medium none;
+    transition: all 0.2s ease 0s;
+}
+
+.cardBodyButtonText{
+    display: inline-block;
+}
+
+.cardBodyButtonText::after {
+    border-radius: 5px;
+    border: 1px solid white;
+    content: "";
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 1px);
+  }
+
+.cardBodyImage{
+    width: 50px;
+    justify-content: center;
+}
+
+.cardBodyImage img{
+    width: 90%;
+    margin-left: -10px;
+}
+
+.teamInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+.teamName p{
+    font-weight: bold;
+    margin: 0;
+}

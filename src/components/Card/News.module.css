@@ -1,0 +1,50 @@
+/* .container{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    row-gap: 15px;
+} */
+
+.gridImage{
+    width: 100%;
+    padding: 0% 25% 0% 25%;
+}
+
+.gridImage img{
+    width: 50%;
+    border-radius: 100%;
+}
+
+.gridText{
+    font-size: 16px;
+}
+
+.container h2{
+    font-size: 20px;
+    margin-top: 0px;
+    padding-top: 12px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.gridText span{
+    display: block;
+    margin: 0px;
+    margin-left: -5px;
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.gridText span:hover{
+    cursor: pointer;
+    color:rgb(14, 168, 245);
+}
