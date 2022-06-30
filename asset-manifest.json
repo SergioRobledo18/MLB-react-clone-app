@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MLB-react-clone-app/static/css/main.5bbcfb1f.css",
-    "main.js": "/MLB-react-clone-app/static/js/main.c7676a91.js",
+    "main.css": "/MLB-react-clone-app/static/css/main.3004a50e.css",
+    "main.js": "/MLB-react-clone-app/static/js/main.c37e057b.js",
     "static/media/ROY.jpg": "/MLB-react-clone-app/static/media/ROY.bc9baa95e8ca589f1ee2.jpg",
     "static/media/vladdy.jpg": "/MLB-react-clone-app/static/media/vladdy.3cf5721a5c334c13305d.jpg",
     "static/media/ad2.jpg": "/MLB-react-clone-app/static/media/ad2.a7e3e524cfa53ba92de7.jpg",
@@ -13,11 +13,11 @@
     "static/media/noHitter.jpg": "/MLB-react-clone-app/static/media/noHitter.5aec37b4e902afd95fdd.jpg",
     "static/media/kidRocket.jpg": "/MLB-react-clone-app/static/media/kidRocket.92cf6f09d1711b08b297.jpg",
     "index.html": "/MLB-react-clone-app/index.html",
-    "main.5bbcfb1f.css.map": "/MLB-react-clone-app/static/css/main.5bbcfb1f.css.map",
-    "main.c7676a91.js.map": "/MLB-react-clone-app/static/js/main.c7676a91.js.map"
+    "main.3004a50e.css.map": "/MLB-react-clone-app/static/css/main.3004a50e.css.map",
+    "main.c37e057b.js.map": "/MLB-react-clone-app/static/js/main.c37e057b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bbcfb1f.css",
-    "static/js/main.c7676a91.js"
+    "static/css/main.3004a50e.css",
+    "static/js/main.c37e057b.js"
   ]
 }
