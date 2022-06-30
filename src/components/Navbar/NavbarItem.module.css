@@ -13,10 +13,14 @@
     position: absolute;
     color: black;
     background-color: #fff;;
-    border-top: 3px solid rgba(0, 102, 255, 0.61);
+    border-top: 5px solid rgb(61, 138, 238);;
     z-index: 15;
     margin-top: 20px;
     display: none;
+    border-left: 0.3px solid rgb(167, 167, 167);
+    border-bottom: 0.3px solid rgb(167, 167, 167);
+    border-right: 0.3px solid rgb(167, 167, 167);
+    border-radius: 3px;
 }
 
 .extraContentList{
@@ -67,7 +71,7 @@
 }
 
 .listItem:hover  p{
-    background-color: rgb(61, 138, 238);;
+    background-color: rgb(61, 138, 238);
     color:white;
     border-radius: 4px;
 }

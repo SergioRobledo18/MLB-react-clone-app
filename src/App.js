@@ -14,7 +14,7 @@ function App() {
       <div className='adContainer'></div>
       <Navbar></Navbar>
       <Scores></Scores>
-      <div className='container'>
+      <div className='mainAppContainer'>
         <div className='leftColumn'> 
           <FavoriteTeams></FavoriteTeams>
         </div>
@@ -51,7 +51,7 @@ function App() {
         </div>
       </div>
       <div className='appFooter'>
-        <h1>This app is a clone of <a href='https://www.mlb.com/' target={'_blank'}> MLB.com </a></h1> 
+        <h1>This app is a clone of <a href='https://www.mlb.com/' target={'_blank'} rel="noreferrer"> MLB.com </a></h1> 
       </div>
     </React.Fragment>
   );
