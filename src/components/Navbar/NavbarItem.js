@@ -19,27 +19,10 @@ const NavbarItem = props =>{
 
     return (
         <React.Fragment>
-            <div className={classes.body}>
+            <div className={classes.NavBarbody}>
                 <div>
                     <span>{props.text}</span>
                 </div>
-                {/*<MoreNavebarItem></MoreNavebarItem>*/}
-                {/* <div className={classes.extraContent}> 
-                    <div className={classes.extraContentList}>
-                        <div className={classes.listItem}>
-                            <p>Hello I am sergio robledo</p>
-                        </div>
-                        <div className={classes.listItem}>
-                            <p>Hello</p>
-                        </div >
-                        <div className={classes.listItem}>
-                            <p>Hello</p>
-                        </div>
-                        <div className={classes.listItem}>
-                            <p>Hello</p>
-                        </div>
-                    </div>
-                </div> */}
                {leftSide() && 
                 (!emptyArray(props.subContents)) && 
                     
@@ -47,7 +30,7 @@ const NavbarItem = props =>{
                         <div className={classes.extraContentList}>
                             {props.subContents.map((subcontent)=>(
                                 <div className={classes.listItem}>
-                                    <p>{subcontent}</p>
+                                    <p className={classes.subContentItem}>{subcontent}</p>
                                 </div>
                             ))}                   
                         </div>

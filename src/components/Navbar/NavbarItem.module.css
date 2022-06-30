@@ -1,4 +1,4 @@
-.body{
+.NavBarbody{
     height: 56px;
     display: inline-block;
     padding: 17px 10px 0px;
@@ -44,7 +44,7 @@
 
 .extraContentListRight p{
     font-weight: normal;
-    margin: 10px;
+    margin: 6px;
 }
 
 .extraContentList p{
@@ -53,10 +53,27 @@
 }
 .listItem{
     margin:10px;
+    font-size: 14px;
 }
 
+.listItem p{
+    padding: 5px 2px 5px 2px;
+    font-weight: 500;
+}
 
-.body:hover .extraContent{
+.NavBarbody:hover .extraContent{
     display: grid;
 
+}
+
+.listItem:hover  p{
+    background-color: rgb(61, 138, 238);;
+    color:white;
+    border-radius: 4px;
+}
+
+@media (max-width: 767px){
+    .extraContentList{
+        display: none;
+    }
 }
