@@ -9,6 +9,11 @@ const FavoriteTeamManager = props =>{
 
     }
 
+    const setFavoriteTeam=(event)=>{
+        props.onConfirm();
+        props.onSetFavoriteTeam(event);
+    }
+
     return(
         <React.Fragment>
 
@@ -19,8 +24,40 @@ const FavoriteTeamManager = props =>{
                         <img src={require('../../images/x-icon.png')} alt="x png"></img>
                     </button>
                 </div>
-                <ul className={classes.cardBodyCenter}>
 
+                <ul className={classes.cardBodyCenter}>
+                    <p className={classes.listlabel}>Favorite Team</p>
+                    {props.numberOneTeam.length>0 &&
+                        <li className={classes.individualTeam} style={{paddingLeft:'30px'}}>
+                            
+                            <div className={classes.favTeamImageHolder}>
+                                <div className={classes.cardBodyImage}>
+                                    <img
+                                        src={require(`../../images/logos/${props.numberOneTeam[0].logo}`)}
+                                        alt="favorite team"
+                                    ></img>
+                                </div>
+                                <div className={classes.starFavTeamImage}>
+                                    <img
+                                        src={require('../../images/star.png')}
+                                        alt="favorite team"
+                                    ></img>
+                                </div>
+
+                            </div>
+
+                            <div className={classes.teamInfo}>
+                                    <div>{props.numberOneTeam[0].location} </div>
+                                    <div className={classes.teamName}><p>{props.numberOneTeam[0].name}</p></div>
+                            </div>
+
+                        </li>
+                    }
+                </ul>
+                
+
+                <ul className={classes.cardBodyCenter}>
+                    <p className={classes.listlabel}>Followed Teams</p>
                     { props.favoriteTeams.length!==0 && 
 
                         props.favoriteTeams.map((teams)=>(
@@ -43,10 +80,16 @@ const FavoriteTeamManager = props =>{
                                 </div>
 
                                 <div className={classes.teamInfo}>
-                                    <div>{teams.name} </div>
-                                    <div className={classes.teamName}><p>{teams.location}</p></div>
+                                    <div>{teams.location}</div>
+                                    <div className={classes.teamName}><p>{teams.name}</p></div>
                                 </div>
-
+                                
+                                <button onClick={e=>setFavoriteTeam({
+                                    id:teams.id,
+                                    location:teams.location,
+                                    name:teams.name,
+                                    logo:teams.logo
+                                })}>Favorite</button>
 
                             </li>
                         ))

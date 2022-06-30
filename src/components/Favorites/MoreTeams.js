@@ -7,20 +7,32 @@ const MoreTeams = props =>{
     const [search, setSearch]= useState('')
 
     const teamSelected=(teamEvent)=>{
-        props.onConfirm();
+        //props.onConfirm(); will automatically close the modal 
         props.onUpdateFavorites(teamEvent);
     }
 
     const removeTeamSelected=(teamEvent)=>{
-        props.onConfirm();
+        //props.onConfirm(); will automatically close the modal
         props.onRemove(teamEvent.id)
     }
-
-    //returns true if theyre already following that team
+    //returns true if this is your favorite team
+    function checkIfFavoriteTeam(teamId){
+        if(props.numberOneTeam.length>0){
+            if(props.numberOneTeam[0].id===teamId){
+                return true;
+                
+            }
+            return false;
+        }
+    }
+//returns true if theyre already following that team
     function inFavorites(favoriteID){
-        return props.favoriteTeams.some(function(el){
+        return ( props.favoriteTeams.some(function(el){
             return el.id === favoriteID;
-        })
+        }))
+    
+
+
     }
 
 
@@ -81,13 +93,16 @@ const MoreTeams = props =>{
                             </div>
                             
 
-                            <div className={classes.followButton}>
+                            <div className={classes.followButton} id="followUnfollowButton">
 
                                 
                                 {/* returns true if theyre are already in favorites so now need to call unfollow*/}
                                 { inFavorites(team.id) && 
+
+                                    
                                     <button
                                         type="button"
+                                        disabled={checkIfFavoriteTeam(team.id)}
                                         onClick= {e=> removeTeamSelected({
                                             id: team.id,
                                         })}
@@ -99,6 +114,7 @@ const MoreTeams = props =>{
                                 { ! (inFavorites(team.id)) && 
                                     <button
                                         type="button"
+                                        disabled={checkIfFavoriteTeam(team.id)}
                                         onClick= {e=> teamSelected({
                                             id: team.id,
                                             favorite: false,

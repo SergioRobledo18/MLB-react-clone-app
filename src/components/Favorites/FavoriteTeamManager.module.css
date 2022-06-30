@@ -16,6 +16,8 @@
     overflow-x: hidden;
 }
 
+
+
 .cardBody p{
     font-size: 16px;
 }
@@ -95,6 +97,31 @@
     margin-top:-5px;
     margin-bottom: -5px;
     scrollbar-width: none;  
+}
+
+.listlabel {
+    font-weight: bold;
+    padding:5px 5px 10px 15px;
+    margin-bottom: -5px;
+    border-bottom: 1px solid rgb(221, 221, 221);;
+
+}
+
+.favTeamImageHolder{
+    position: relative;
+}
+
+.cardBodyImageFavorite{
+    width: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.starFavTeamImage img{
+    height: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
 }
 
 .individualTeam{

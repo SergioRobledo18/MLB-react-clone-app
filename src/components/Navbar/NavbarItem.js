@@ -29,7 +29,7 @@ const NavbarItem = props =>{
                     <div className={classes.extraContent}> 
                         <div className={classes.extraContentList}>
                             {props.subContents.map((subcontent)=>(
-                                <div className={classes.listItem}>
+                                <div className={classes.listItem} >
                                     <p className={classes.subContentItem}>{subcontent}</p>
                                 </div>
                             ))}                   

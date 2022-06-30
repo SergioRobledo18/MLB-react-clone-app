@@ -23,8 +23,8 @@ const Backdrop = props=>{
         <React.Fragment>
             <div className={classes.backdrop} onClick={props.onConfirm}></div>
             
-            {displayFavoriteTeamMenu && <FavoriteTeamManager onConfirm= {props.onConfirm} onMoreTeamsMenu={placeMoreTeamsMenu} favoriteTeams={props.favoriteTeamList} onRemove= {props.onRemove}></FavoriteTeamManager>}
-            {displayAddMoreMenu && <MoreTeams onConfirm= {props.onConfirm} onBack={backToDisplayFavoriteTeamMenu} onUpdateFavorites={props.onUpdate} onRemove= {props.onRemove} favoriteTeams={props.favoriteTeamList}></MoreTeams>}
+            {displayFavoriteTeamMenu && <FavoriteTeamManager numberOneTeam={props.numberOneTeam} onSetFavoriteTeam={props.onSetNumberOneFavorite} onConfirm= {props.onConfirm} onMoreTeamsMenu={placeMoreTeamsMenu} favoriteTeams={props.favoriteTeamList} onRemove= {props.onRemove}></FavoriteTeamManager>}
+            {displayAddMoreMenu && <MoreTeams numberOneTeam={props.numberOneTeam} onConfirm= {props.onConfirm} onBack={backToDisplayFavoriteTeamMenu} onUpdateFavorites={props.onUpdate} onRemove= {props.onRemove} favoriteTeams={props.favoriteTeamList}></MoreTeams>}
 
         </React.Fragment>
     )
