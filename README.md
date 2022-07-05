@@ -1,6 +1,6 @@
 # Project Description
 
-This project was created with the purpose to practice my React.js skills. All the data that is being displayed is from mock data. Lastly, the website original website looks like the image at the bottom. 
+This project was created with the purpose to practice my React.js skills. All the data that is being displayed is from mock data and can be found in the data folder inside the src folder. Lastly, the original website looks like the image at the bottom. 
 
 To see what my project looks like [click here](https://sergiorobledo18.github.io/MLB-react-clone-app/)
 
